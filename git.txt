@@ -1,0 +1,71 @@
+	
+	聚合：父工程管理子模块的 生命周期
+	继承：
+	
+	web项目classpath WEB-INF\classes
+
+本日：git
+	0.git项目版本管理工具
+		版本控制：存储、追踪目录（文件夹）和文件的修改历史(xx人 xx时间 xx文件 xx内容 xx版本号)。
+	1.git命令
+		git init（初始创建本地仓库）
+		git clone
+		git add
+		git commit
+		git pull
+		git push
+		
+		git在忽略不想被版本控制的文件或目录时，一定要在commit之前！
+	
+	2.常用操作(命令。熟练操作) - 使用http(s)方式
+		clone
+		[add - ]commit(到本地)-pull(从远程版本库拉取)-解决冲突(conflict)-commit(到本地)-push(将代码推送到远程仓库)
+		
+	3.github|码云 - 在线远程仓库——共同开发
+		两种协议：
+			ssh
+			https
+		
+		将本地代码(仓库)share到远程仓库操作：
+			
+		先把远程的空仓库down到本地，代码扔到仓库
+		
+		公司git中央服务
+			得到url 要分配用户
+	
+	4.分支、合并
+		创建本地分支
+		create branch
+		切换本地分支checkout
+		
+		要将本地分支代码上传到远程，如果想要在远程仓库创建同本地分支同名的分支，则push时不要选择分支(空着)！
+
+	5.idea + git 完成代码版本管理
+		checkout
+		commit
+		push
+		pull
+		
+		idea如何解决冲突问题？
+		
+
+本日工作：
+	分组练习，完成代码共同开发，并解决冲突等...分支
+	
+	组长在 github/gitee 创建一个中央版本库。上传一个项目，三四个文件，每个文件交给2个人改动，相互提交，查看冲突并解决。 使用idea操作
+	查看整个项目的所有修改版本信息
+	
+题外话：
+	1.git 安装linux常见问题
+		1)执行autoconfg时出现autoconf: command not found
+			解决：
+			安装autoconf,执行如下命令
+			yum install install autoconf automake libtool
+		2)执行make操作时出现 zlib.h: 没有那个文件或目录
+			解决：
+			执行如下安装命令
+			yum install zlib-devel
+	2.找一个云笔记，记录知识点
+	
+	3.较全的学习网站：
+		https://www.liaoxuefeng.com/wiki/896043488029600
